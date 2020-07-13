@@ -4,8 +4,6 @@ import pandas as pd
 import tensorflow as tf
 
 #load CSV
-#hi what's up
-print(hi)
 dataset_train = pd.read_csv('/Users/eden/Projects/SHIFTProject/IBM.csv')
 
 training_set = dataset_train.iloc[:, 1:2].values #open column
