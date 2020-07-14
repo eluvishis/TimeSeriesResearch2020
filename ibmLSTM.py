@@ -23,7 +23,7 @@ X_train, y_train = np.array(X_train), np.array(y_train)
 
 X_train = np.reshape(X_train, (X_train.shape[0], X_train.shape[1], 1)) #makes it 3D
 
-regressor = tf.keras.models.Sequential()
+regressor = tf.keras.models.Sequential() #this is a model 
 
 regressor.add(tf.keras.layers.LSTM(units = 50, return_sequences = True, input_shape = (X_train.shape[1], 1)))
 regressor.add(tf.keras.layers.Dropout(0.2))
